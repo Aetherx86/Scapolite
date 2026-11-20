@@ -79,6 +79,14 @@ python3 .github/scripts/repo_guard.py . --strict
 go test -v -race ./...
 ```
 
+## 0.2.0 변경 사항
+
+- `pkg/evm`: ERC-20 `transfer`/`transferFrom`/`approve`, 네이티브 전송, 컨트랙트 생성, EIP-2930 액세스 리스트, AMM/WETH 셀렉터 기반 상태 접근 추론
+- 스토리지 슬롯, 잔액, 논스, 생성 키에 대한 충돌 DAG (RAW/WAR/WAW, 초과 인출 검사)
+- 사이클 탐지, 가스 가중 임계 경로, 워커 수 기반 효율 추정
+- 샌드위치, 우선 수수료 프런트러닝, 백러닝, 경합 핫스팟 MEV 탐지
+- CLI: `-gen`, `-out`, `-bench`, `-seed`, `-json`
+
 ## 라이선스
 
 MIT License. Copyright (c) 2026 Jeong Hoon Kim (Aether Systems & Research Lab).

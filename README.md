@@ -138,7 +138,25 @@ go test -v -race -cover ./...
 
 ---
 
+## 0.2.0: Conflict DAG, MEV Detection and Benchmarks
+
+```bash
+# Deterministic 500-transaction mempool, exported then scheduled
+scapolite -gen 500 -seed 7 -out mempool.json
+scapolite -f mempool.json -mode deep -workers 16 -json > schedule.json
+
+# Address-level scheduling compared with slot-level scheduling
+scapolite -f mempool.json -mode fast
+scapolite -f mempool.json -mode deep
+
+# Scheduler throughput across batch sizes
+scapolite -bench 100,500,1000,5000 -json
+```
+
+Deep mode builds the conflict DAG over storage slots, balances, nonces and contract creation keys. It reports parallel waves, the gas-weighted critical path, speedup and efficiency for the configured worker count, and MEV alerts covering sandwiches, priority-fee frontrunning and contention hotspots.
+
 ## License
 
 Copyright (c) 2026 Jeong Hoon Kim (Aether Systems & Research Lab). All rights reserved.  
 Released under the [MIT License](LICENSE).
+
