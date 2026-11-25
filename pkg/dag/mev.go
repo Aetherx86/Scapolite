@@ -6,7 +6,7 @@ import (
 	"sort"
 	"strings"
 
-	"github.com/Aetherx86/Scapolite/pkg/evm"
+	"github.com/omakasekim/Scapolite/pkg/evm"
 )
 
 // MEVThreatType classifies a detected mempool exploitation or state contention pattern.

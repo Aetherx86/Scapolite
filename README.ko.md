@@ -56,7 +56,7 @@ Scapolite는 외부 의존성 없이 순수 Go 표준 라이브러리만으로 �
 ## 설치 및 빌드
 
 ```bash
-git clone https://github.com/Aetherx86/Scapolite.git
+git clone https://github.com/omakasekim/Scapolite.git
 cd Scapolite
 go build -o bin/scapolite ./cmd/scapolite
 ```

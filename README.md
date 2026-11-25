@@ -116,7 +116,7 @@ Microbenchmarks measured on Apple M4 (macOS Sonoma, Go 1.23):
 ```
 goos: darwin
 goarch: arm64
-pkg: github.com/Aetherx86/Scapolite/pkg/dag
+pkg: github.com/omakasekim/Scapolite/pkg/dag
 BenchmarkBuildGraph_1000Tx-10                 1676        606252 ns/op      768492 B/op      6932 allocs/op
 BenchmarkComputeParallelWaves_1000Tx-10       3080        394235 ns/op       79544 B/op       185 allocs/op
 ```

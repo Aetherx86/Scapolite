@@ -4,7 +4,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/Aetherx86/Scapolite/pkg/evm"
+	"github.com/omakasekim/Scapolite/pkg/evm"
 )
 
 // DependencyType categorizes directed state or ordering dependencies between transactions.

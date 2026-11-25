@@ -10,7 +10,7 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/Aetherx86/Scapolite/pkg/evm"
+	"github.com/omakasekim/Scapolite/pkg/evm"
 )
 
 var (

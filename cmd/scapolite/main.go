@@ -10,8 +10,8 @@ import (
 	"strings"
 	"time"
 
-	"github.com/Aetherx86/Scapolite/pkg/dag"
-	"github.com/Aetherx86/Scapolite/pkg/evm"
+	"github.com/omakasekim/Scapolite/pkg/dag"
+	"github.com/omakasekim/Scapolite/pkg/evm"
 )
 
 const version = "0.2.0"

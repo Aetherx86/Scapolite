@@ -11,7 +11,7 @@ import (
 	"os"
 	"strings"
 
-	"github.com/Aetherx86/Scapolite/pkg/evm"
+	"github.com/omakasekim/Scapolite/pkg/evm"
 )
 
 // IngestMempoolJSON parses an array of scheduler transactions from a reader or file.

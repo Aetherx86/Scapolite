@@ -8,7 +8,7 @@ import (
 	"sync"
 	"testing"
 
-	"github.com/Aetherx86/Scapolite/pkg/evm"
+	"github.com/omakasekim/Scapolite/pkg/evm"
 )
 
 func TestConflictDAGIndependentTransactions(t *testing.T) {

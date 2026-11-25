@@ -5,7 +5,7 @@ import (
 	"math/big"
 	"strings"
 
-	"github.com/Aetherx86/Scapolite/pkg/evm"
+	"github.com/omakasekim/Scapolite/pkg/evm"
 )
 
 // ConflictType denotes the category of state or ordering conflict between two EVM transactions.
